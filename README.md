@@ -2,6 +2,9 @@
 
 Welcome to **Codify**, your one-stop shop for all things programming! Whether you're a seasoned developer or just starting your coding journey, CodeHub provides a vibrant community and powerful tools to learn, practice, and share your passion for code.
 
+![First Glance](https://github.com/omer-here/codify-frontend/assets/110015265/bf5df7c7-5ffe-4a30-823a-543a5c19b0c0)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## What We Offer
