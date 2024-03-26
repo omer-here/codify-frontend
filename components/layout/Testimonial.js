@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import React from 'react'
+import FiverrIcon from '../images/fiverrr.png'
+import NetflixIcon from '../images/netflix.png'
+import SemrushIcon from '../images/semrush.png'
 
 function Testimonial() {
   return (
@@ -30,20 +32,35 @@ function Testimonial() {
       <p className='text-2xl font-bold'>What People are Saying About us</p>
       <p>List of what we offer</p>
 
-      <div className='flex flex-row justify-center gap-8'>
-        <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl h-56 w-56" >
-                <p>Testimonial 1</p>
+      <div className='flex flex-row justify-center md:gap-8 gap-2'>
+        <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl md:h-56 w-56 h-64" >
+                <p className='p-6 font-serif text-gray-200'>This is the Best Platform I ever used for learning Programming Concepts!</p>
+                <p className='p-6 font-semibold'>Sam ALton</p>
         </div>
-        <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl h-56 w-56" >
-                <p>Testimonial 2</p>
+        <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl md:h-56 w-56 h-64" >
+        <p className='p-6 font-serif text-gray-200'>This is the Best Platform I ever used for learning Programming Concepts!</p>
+                <p className='p-6 font-semibold'>Sam ALton</p>
         </div>
-        <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl h-56 w-56" >
-                <p>Testimonial 3</p>
+        <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl md:h-56 w-56 h-64" >
+        <p className='p-6 font-serif text-gray-200'>This is the Best Platform I ever used for learning Programming Concepts!</p>
+                <p className='p-6 font-semibold'>Sam ALton</p>
         </div>
     </div>
 
-    <div className='bg-white bg-opacity-20 backdrop-blur-lg rounded-md drop-shadow-xl h-36 w-full'>
-      <p>Companies Trusted By</p>
+    <p className='text-2xl font-bold mt-4'>Comapanies Entrusted By</p>
+
+    <div className='bg-white bg-opacity-70 backdrop-blur-lg rounded-md drop-shadow-xl md:h-36 h-28 w-full'>
+      <div className='flex flex-row justify-evenly'>
+        <div className="h-36 w-56">
+          <Image src={FiverrIcon} alt="Fiverr Icon" />
+        </div>
+        <div className="h-14 w-36">
+          <Image src={NetflixIcon} alt="Netflix Icon" />
+        </div>
+        <div className="h-36 w-56">
+        <Image src={SemrushIcon} alt="Semrush Icon" />
+        </div>
+      </div>
     </div>
     </div>
 

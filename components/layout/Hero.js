@@ -30,7 +30,7 @@ function Hero() {
             
             <p className="text-sm ">By Signing Up, You are agreed to the Codify Terms and Conditions </p>
         </div>
-        <div className="bg-purple-700 h-fit w-1/2 drop-shadow-lg">
+        <div className="bg-purple-700 h-fit w-1/2 drop-shadow-lg hidden md:block">
           {/* <p> Image </p> */}
           <Image src={HeroImg} alt="Hero-Image" />
         </div>

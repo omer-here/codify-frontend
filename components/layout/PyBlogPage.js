@@ -37,13 +37,13 @@ export default async function PyBlogPage() {
           <div>Hello</div> */}
         </div>
 
-        <div className="flex flex-col p-8 gap-2 w-1/2 prose">
+        <div className="flex flex-col mt-4 md:mt-0 md:p-8 gap-2 w-1/2 prose">
           {/* <div>Hello</div>
           <div>Hello</div> */}
           <h1 className="text-white">All posts</h1>
           {posts.subDetails.map((val) => {
             return (
-              <div className="text-gray-200 p-4 bg-slate-900 border-4 shadow-xl border-gray-300 mb-4 rounded-md " key={val.attributes.title}>
+              <div className="text-gray-200 p-4 bg-slate-900 border-4 w-full shadow-xl border-gray-300 mb-4 rounded-md " key={val.attributes.title}>
                 <Link
                   key={val.attributes.title}
                   href={`/python-programs/${val.attributes.urlSlug}`}

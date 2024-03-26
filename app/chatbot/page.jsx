@@ -8,10 +8,10 @@ export default function Chat() {
     return(
       <>
       {/* Rendering Initial Visit */}
-      <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
+      <div className="flex flex-col relative w-full max-w-md py-24 mx-auto stretch">
         <div className='w-full bg-gray-800 h-36 rounded-xl'>
-          <p className='text-2xl font-sans font-bold'>Feeling Stuck?</p><b/>
-          <p className='text-base'>You can Start Asking Questions!</p>
+          <p className='text-4xl font-sans font-bold p-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 from-10% via-slate- via-30% to-purple-900 to-90%'>Feeling Stuck?</p><b/>
+          <p className='text-xs p-4 text-gray-400'>You can start asking questions!</p>
         </div>
      
 
@@ -29,13 +29,15 @@ export default function Chat() {
       </>
     );
   }
+
+
   return (
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
       {/* Rendering messages */}
       {messages.map(m => (
-        <div key={m.id} className="whitespace-pre-wrap bg-gray-900 px-2 rounded-lg border border-gray-300 shadow-xl">
-          {m.role === 'user' ? 'User: ' : 'AI: '}
-          {m.content}
+        <div key={m.id} className="whitespace-pre-wrap bg-gray-800 font-sans text-gray-200 px-2 p-4 rounded-lg border border-gray-300 shadow-xl">
+          <span className='text-lg font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 from-10% via-slate- via-30% to-purple-400 to-90%'>{m.role === 'user' ? 'User: ' : 'AI: '}</span>
+          <span className='font-sans font-semibold text-gray-200 '>{m.content}</span>
         </div>
       ))}
       {/* submisson part */}

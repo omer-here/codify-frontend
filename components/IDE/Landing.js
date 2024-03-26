@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 import CodeEditorWindow from "./CodeEditorWindow";
@@ -143,6 +145,7 @@ export default function Landing() {
           <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />
         </div> */}
       </div>
+
       <div className="flex flex-row space-x-4 items-start px-4 py-4">
         <div className="flex flex-col w-full h-full justify-start items-end">
           <CodeEditorWindow
@@ -170,6 +173,7 @@ export default function Landing() {
           {outputDetails && <OutputDetails outputDetails={outputDetails} />}
         </div>
       </div>
+      <div className="h-4 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></div>
     </>
   );
 }

@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { revalidatePath } from "next/cache";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { gql } from "@apollo/client";
+import Landing from "@/components/IDE/Landing";
 
 export const dynamic = "force-dynamic";
 
@@ -25,7 +26,7 @@ export default async function PyBlogPost({ params }) {
       <Navbar />
       <div className="flex flex-col gap-2 p-8 justify-center items-center bg-slate-900 w-full">
         {/* <h1 className="">{post.subDetails.title}</h1> */}
-        <div className="prose prose-neutral prose-headings:text-gray-200 prose-p:text-gray-200 prose-:text-gray-200 prose-ul:text-gray-200 prose-ol:text-gray-200">
+        <div className="prose prose-neutral prose-headings:text-gray-200 prose-p:text-gray-200 prose-code:text-yellow-400 prose-ul:text-gray-200 prose-ol:text-gray-200">
           <MDXRemote source={post.subDetails.content} />
         </div>
 
@@ -57,6 +58,7 @@ export default async function PyBlogPost({ params }) {
    ></iframe> */}
       </div>
 
+      <Landing />
       <Footer />
     </>
   );
@@ -119,7 +121,7 @@ async function getBlogPost(params) {
   };
 }
 
-//https://tailwindcss.com/docs/typography-plugin
+//https://tailwindcss.com/docs/typography-plugin 
 //<iframe src="<YOUR REPL LINK>" width="600" height="400" />
 // <iframe src="https://replit.com/@omeriskills/Python?embed=true" width="600" height="400" />
 //https://about.gitlab.com/handbook/markdown-guide/

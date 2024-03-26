@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { use } from 'react'
 import IdeImg from '../images/Desktop 7.jpg'
 import ChatBotImg from '../images/Chatbot 2.jpg'
 import TopicImg from '../images/Desktop 3.jpg'
 import Image from 'next/image'
+// import { useRouter } from 'next/navigation' 
+import { PushToContent, PushToIDE, PustToChatbot } from '@/app/user'
+
+// import { redirect } from 'next/navigation' it works on server components
+
+
 
 function Body() {
+
   return (
 //     <section className="text-gray-600 body-font overflow-hidden">
 //   <div className="container px-5 py-24 mx-auto">
@@ -62,45 +69,45 @@ function Body() {
 // </section>
 <section className="p-8 bg-slate-500 overflow-hidden">
   <div className="flex flex-row justify-between">
-      <div className="bg-purple-700 h-fit w-1/3 drop-shadow-xl" >
+      <div className="bg-purple-700 h-fit w-1/3 drop-shadow-xl hidden md:block" >
           {/* <p>Image</p> */}
           <Image src={IdeImg} alt="Ide Image" />
       </div>
-      <div className="flex flex-col justify-start gap-2">
+      <div className="flex flex-col justify-start gap-2 max-w-md">
           <p className='text-2xl font-bold' >Have A Glance on Embedded IDE</p>
-          <p>Description</p>
-          <button className='bg-blue-600 font-bold p-2 border-sky-500 rounded-xl w-fit'>Got Stuck?</button>
+          <p>The Integrated Development Environment (IDE) embedded in our software allows you to write, compile, and run code all in one place. It supports multiple languages and comes with features like syntax highlighting and auto-completion, making coding easier and more efficient. It’s like having a powerful coding tool right at your fingertips.</p>
+          <PushToIDE/>
       </div>     
   </div>
 
   <div className="flex flex-row justify-between pt-8">
-      <div className="flex flex-col justify-start gap-2">
+      <div className="flex flex-col justify-start gap-2 max-w-md">
           <p className='text-2xl font-bold' >Supercharge Your Experience With AI</p>
-          <p>Description</p>
-          <button className='bg-blue-600 font-bold p-2 border-sky-500 rounded-xl w-fit'>Try Now!</button>
+          <p>Our software features a powerful chatbot designed to assist learners throughout their coding journey. Whether you’re stuck on a problem or need clarification on a concept, the chatbot is there to help. It can provide hints, explain concepts, and even guide you through complex problems, making learning to code less daunting.</p>
+          <PustToChatbot/>
       </div>
-      <div className="bg-purple-700 h-fit w-1/3 drop-shadow-xl" >
+      <div className="bg-purple-700 h-fit w-1/3 drop-shadow-xl hidden md:block" >
           {/* <p>Image</p> */}
           <Image src={ChatBotImg} alt="Ide Image" /> 
       </div>     
   </div>
 
   <div className="flex flex-row justify-between pt-8 gap-2 mb-4">
-      <div className="flex flex-col justify-start gap-2">
+      <div className="flex flex-col justify-start gap-2 max-w-md">
           <p className='text-2xl font-bold' >Explore Your Favourite Topics</p>
-          <p>Description</p>
-          <button className='bg-blue-600 font-bold p-2 border-sky-500 rounded-xl w-fit'>Explore Now!</button>
+          <p>Our software offers a wide variety of content on different programming topics. From beginner-friendly tutorials on Python to advanced topics in machine learning and data science, there’s something for everyone. The content is regularly updated and expanded, ensuring you always have access to the latest trends and technologies in the programming world.</p>
+            <PushToContent/>
       </div>
       <div className='flex flex-row gap-4'>
-        <div className="bg-purple-700 h-fit w-56 drop-shadow-xl" >
+        <div className="bg-purple-700 h-fit w-56 drop-shadow-xl hidden md:block" >
             {/* <p>Image</p> */}
             <Image src={TopicImg} alt="Topic Image" />
         </div>
-        <div className="bg-purple-700 h-fit w-56 drop-shadow-xl" >
+        <div className="bg-purple-700 h-fit w-56 drop-shadow-xl hidden md:block" >
             {/* <p>Image</p> */}
             <Image src={TopicImg} alt="Topic Image" />
         </div>
-        <div className="bg-purple-700 h-fit w-56 drop-shadow-xl" >
+        <div className="bg-purple-700 h-fit w-56 drop-shadow-xl hidden md:block" >
             {/* <p>Image</p> */}
             <Image src={TopicImg} alt="Topic Image" />
         </div>

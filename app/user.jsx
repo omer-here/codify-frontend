@@ -3,6 +3,7 @@
 import { useSession } from 'next-auth/react'
 import { signIn, signOut } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 
 export const LoginButton = () => {
@@ -23,3 +24,27 @@ export const User = () => {
   //console.log('Client Session', session)
   return <p>{JSON.stringify(session)}</p>
 }
+
+export const PushToIDE = () => {
+  const router = useRouter();
+  return(<Link href='/code'>
+  <p className='bg-blue-600 font-bold p-2 border-sky-500 rounded-xl w-fit'>Got Stuck!</p>
+  </Link>
+  )
+}
+
+export const PustToChatbot = () => {
+  const router = useRouter();
+  return(<Link href='/chatbot'>
+  <p className='bg-blue-600 font-bold p-2 border-sky-500 rounded-xl w-fit'>Try Now!</p>
+  </Link>)
+}
+
+export const PushToContent = () => {
+  const router = useRouter();
+  return(
+    <Link href='/python-programs'>
+  <p className='bg-blue-600 font-bold p-2 border-sky-500 rounded-xl w-fit'>Explore Now!</p>
+  </Link>
+  )
+} 
