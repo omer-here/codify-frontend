@@ -10,13 +10,13 @@ export default function OutputDetails({ outputDetails }) {
       <p className="text-sm">
         Memory:{" "}
         <span className="font-semibold px-2 py-1 rounded-md text-black bg-gray-100">
-          {outputDetails?.memory}
+          {outputDetails?.memory} B
         </span>
       </p>
       <p className="text-sm">
         Time:{" "}
         <span className="font-semibold px-2 py-1 rounded-md text-black bg-gray-100">
-          {outputDetails?.time}
+          {outputDetails?.time} S
         </span>
       </p>
     </div>

@@ -27,7 +27,7 @@ model Account {
   token_type         String
   scope              String
   refreshToken       String?
-  accessToken        String?
+  access_token        String?
   accessTokenExpires DateTime?
   createdAt          DateTime  @default(now())
   updatedAt          DateTime  @updatedAt

@@ -1,8 +1,8 @@
 const LanguageOptions = [
     {
       id: 71,
-      name: "Python (3.8.1)",
-      label: "Python (3.8.1)",
+      name: "Python (3.11.1)",
+      label: "Python (3.11.1)",
       value: "python",
     },
     {

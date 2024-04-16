@@ -35,9 +35,9 @@ export default function Chat() {
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
       {/* Rendering messages */}
       {messages.map(m => (
-        <div key={m.id} className="whitespace-pre-wrap bg-gray-800 font-sans text-gray-200 px-2 p-4 rounded-lg border border-gray-300 shadow-xl">
+        <div key={m.id} className="whitespace-pre-wrap bg-gray-800 font-sans text-gray-200 px-2 p-4 rounded-lg border border-gray-300 shadow-xl mb-2">
           <span className='text-lg font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 from-10% via-slate- via-30% to-purple-400 to-90%'>{m.role === 'user' ? 'User: ' : 'AI: '}</span>
-          <span className='font-sans font-semibold text-gray-200 '>{m.content}</span>
+          <span className='font-sans font-semibold text-gray-200 prose prose-neutral prose-headings:text-gray-200 prose-p:text-gray-200 prose-code:text-yellow-400 prose-ul:text-gray-200 prose-ol:text-gray-200'>{m.content}</span>
         </div>
       ))}
       {/* submisson part */}

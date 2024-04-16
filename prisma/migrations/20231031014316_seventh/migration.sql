@@ -5,5 +5,5 @@
 
 */
 -- AlterTable
-ALTER TABLE "Account" DROP COLUMN "access_token",
+ALTER TABLE "Account" DROP COLUMN "accessToken",
 ADD COLUMN     "accessToken" TEXT;

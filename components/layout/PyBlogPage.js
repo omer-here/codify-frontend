@@ -80,7 +80,7 @@ async function getBlog() {
 
   const Query = gql`
     query {
-      pythonPrograms(filters: { subCategory: { eq: "introductory" } }) {
+      pythonPrograms(sort:"srNO" ,  filters: { subCategory: { eq: "introductory" } }) {
         data {
           attributes {
             title

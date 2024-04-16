@@ -14,6 +14,6 @@ export default function Dashboard() {
   return <>
   Super Secret Page
   {/* <button className="inline-flex text-white bg-indigo-500 border-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={openSideWindow}>Open Side Window</button> */}
-  <ChatBox/>
+  {/* <ChatBox/> */}
   </>;
 }
