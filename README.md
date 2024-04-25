@@ -1,8 +1,9 @@
 # Project: Codify - A Coding Website for Aspiring Code Warriors 
 
-Welcome to **Codify**, your one-stop shop for all things programming! Whether you're a seasoned developer or just starting your coding journey, CodeHub provides a vibrant community and powerful tools to learn, practice, and share your passion for code.
+Welcome to **Codify**, your one-stop shop for all things programming! Whether you're a seasoned developer or just starting your coding journey, This CodeHub provides a vibrant community and powerful tools to learn, practice, and share your passion for code.
 
 ![First Glance](https://github.com/omer-here/codify-frontend/assets/110015265/a11724bc-23d8-4d18-95d1-7a73868d61da)
+
 
 
 
